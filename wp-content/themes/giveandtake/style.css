@@ -86,7 +86,7 @@ img.map {
 	height: 77px;
 }
 
-/* home section */
+/* give-take section */
 
 .give-take {
 	color: #FF8E8E;
@@ -125,7 +125,7 @@ img.map {
 
 .what-we-sell {
 	background: #9cadc7 url('images/bg-what-we-sell.jpg') no-repeat top center;
-	height: 800px
+	height: 870px;
 }
 
 .what-we-sell .content {
@@ -164,7 +164,7 @@ img.map {
 
 .how-does-it-work {
 	background: #ec582a url('images/bg-how-does-it-work.jpg') no-repeat top center;
-	height: 800px
+	height: 1010px;
 }
 
 .how-does-it-work .content {
@@ -210,7 +210,7 @@ img.map {
 
 .charities {
 	background: #fffecb url('images/bg-charities.jpg') no-repeat top center;
-	height: 800px
+	height: 840px;
 }
 
 .charities .content {
@@ -313,6 +313,10 @@ img.map {
 	color: #fffecb;
 	font-weight: bold;
 	font-size: 1.2em;
+}
+
+.information .location {
+	position: static;
 }
 
 .information .footer {
