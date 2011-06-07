@@ -5,9 +5,14 @@ wp_nav_menu( array(
 	'menu_id' => 'nav'
 ) );
 
+$footer = get_page_by_path('footer');
+$footer_id = $footer->ID;
 $i=0;
 $page_count = $wp_query->post_count;
 while ( have_posts() ) : the_post();
+if($post->ID==$footer_id) {
+	continue;
+}
 $i = $wp_query->current_post; ?>
 <?php if($i!=0) { ?>
 <div class="diagonal top fullwidth">
@@ -36,7 +41,7 @@ $i = $wp_query->current_post; ?>
 	</div>
 	<?php if($i==$page_count-1) { ?>
 	<div class="jbasewrap passthrough">
-		<div class="footer"><?php $footer = get_page_by_path('footer'); echo $footer->post_content; ?></div>
+		<div class="footer"><?php echo $footer->post_content; ?></div>
 	</div>
 	<?php } ?>
 </div>
