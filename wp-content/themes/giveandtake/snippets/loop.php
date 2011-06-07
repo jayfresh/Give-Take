@@ -16,7 +16,7 @@ if($post->ID==$footer_id) {
 $i = $wp_query->current_post; ?>
 <?php if($i!=0) { ?>
 <div class="diagonal top fullwidth">
-	<img alt="stripe" src="images/diag-<?php the_slug(); ?>.png" />
+	<img alt="stripe" src="<?php bloginfo('stylesheet_directory'); ?>/images/diag-<?php the_slug(); ?>.png" />
 </div>
 <?php } ?>
 <div class="fullwidth <?php the_slug(); ?>">
@@ -30,9 +30,11 @@ $i = $wp_query->current_post; ?>
 			<h2><?php the_title(); ?></h2>
 			<?php } ?>
 			<p class="tagline"><?php echo get_the_excerpt(); ?></p>
-			<?php the_content();
-		
-		} else {
+			<div class="panel">
+			<?php the_content(); ?>
+			</div>
+
+		<?php } else {
 		
 			the_content();
 		
@@ -47,7 +49,7 @@ $i = $wp_query->current_post; ?>
 </div>
 <?php if($i!=$page_count-1) { ?>
 	<div class="diagonal fullwidth">
-		<img alt="stripe" src="images/diag-home.png" />
+		<img alt="stripe" src="<?php bloginfo('stylesheet_directory'); ?>/images/diag-<?php the_slug(); ?>.png" />
 	</div>
 <?php  }
 $i++;
