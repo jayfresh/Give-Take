@@ -25,7 +25,6 @@
 		<link rel="stylesheet" type="text/css" href="<?php bloginfo( 'template_url' ); ?>/css/reset.css" />
 		<link rel="stylesheet" type="text/css" href="<?php bloginfo( 'template_url' ); ?>/css/j-base.css" />
 		<link rel="stylesheet" type="text/css" href="<?php bloginfo( 'template_url' ); ?>/css/grid.css" />
-		<link rel="stylesheet" type="text/css" href="<?php bloginfo( 'template_url' ); ?>/css/stickyfooter.css" />
 		<link rel="stylesheet" type="text/css" media="all" href="<?php bloginfo( 'stylesheet_url' ); ?>" />
 		<link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>" />
 		<link rel="shortcut icon" href="<?php bloginfo('template_directory'); ?>/images/favicon.ico" />
@@ -48,17 +47,4 @@
 	</head>
 	<body>
 		<div id="wrapper">
-			<div class="jbasewrap">
-				<h1 class="imgreplace grid6col left"><a href="<?php echo home_url( '/' ); ?>" title="<?php bloginfo( 'name' ); ?>"><?php bloginfo( 'name' ); ?></a></h1>
-				<?php wp_nav_menu( array(
-					'theme_location' => 'main_menu', 
-					'container_id' => 'main_menu',
-					'container_class' => 'grid6col right',
-					'menu_class' => 'noBullets ' 
-					)
-				); ?>
-				<div class="grid6col right margintop alignright">
-				Right float widget area
-				</div>
-				<br class="clearboth" />
 				

@@ -6,4 +6,9 @@ function givetake_init() {
 
 add_action('init', 'givetake_init');
 
+function the_slug() {
+	global $post;
+	echo $post->post_name;
+}
+
 ?>
