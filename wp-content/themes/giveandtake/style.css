@@ -7,8 +7,6 @@ Template: Scaffolding
 Version: 1.0
 */
 
-@import url('../Scaffolding/css/reset.css');
-@import url('../Scaffolding/css/jbase.css');
 @import url('../Scaffolding/css/style.css');
 
 
