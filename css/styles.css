@@ -13,16 +13,16 @@
 	padding-bottom: 33px;
 }
 
-.section1 {
+.home {
 	background-color: blue;
 }
-.section1 .jbasewrap {
+.home .jbasewrap {
 	background: url('../images/photo1.jpg') no-repeat top left;
 }
-.section2 {
+.whatwesell {
 	background-color: red;
 }
-.section2 .jbasewrap {
+.whatwesell .jbasewrap {
 	background: url('../images/photo2.jpg') no-repeat top left;
 }
 
@@ -56,4 +56,29 @@
 	position: absolute;
 	right: 0;
 	top: 50px;
+}
+
+/* end nav */
+
+img.map {
+	width: 77px;
+	height: 77px;
+}
+
+/* home section */
+.home {
+	color: #FF8E8E;
+}
+
+.home .content {
+	width: 357px;
+	background-color: transparent;
+	padding: 13px;
+}
+
+.tagline {
+	position: relative;
+	left: 150px;
+	background-color: #FF8E8E;
+	color: #FFF;
 }
