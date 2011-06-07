@@ -6,13 +6,21 @@ function givetake_init() {
 
 add_action('init', 'givetake_init');
 
+function add_stylesheets() { ?>
+	<link href='http://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Francois+One' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=PT+Sans:regular,bold' rel='stylesheet' type='text/css'>
+<?php }
+
+add_action('wp_head', 'add_stylesheets');
+
 function the_slug() {
 	global $post;
 	echo $post->post_name;
 }
 
 function address_func() {
-     return '<div><img class="map left" src="images/map.jpg" alt="" />' .
+     return '<div class="location"><img class="map left marginright" src="'.get_bloginfo('stylesheet_directory').'/images/map.jpg" alt="Link to Google Map showing Give and Take shop location" />' .
 		'<div class="adr">' .
 			'<div class="street-address">3 Lordship Lane</div>' .
 			'<div class="extended-address">East Dulwich</div>' .

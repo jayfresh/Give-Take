@@ -7,6 +7,382 @@ Template: Scaffolding
 Version: 1.0
 */
 
-@import url('../Scaffolding/css/style.css');
+/* getting the diagonal stripes in place */
+
+#wrapper {
+	position: relative;
+}
+
+.fullwidth {
+	width: 100%;
+	position: relative;
+}
+.fullwidth .jbasewrap {
+	padding-top: 100px;
+	padding-bottom: 33px;
+}
+
+/*.jbasewrap {
+	width: 1200px;
+}*/
 
 
+
+.diagonal {
+	/*position: absolute;
+	bottom: 0;*/
+	height: 0px;
+	z-index: 1;
+}
+.diagonal.top {
+	/*bottom: auto;
+	top: 0;*/
+}
+.diagonal img {
+	width: 100%;
+	height: 300px;
+	position: relative;
+	top: -201px;
+}
+.diagonal.top img {
+	top: -101px;
+}
+
+/* nav */
+
+.jbasewrap {
+	position: relative;
+}
+
+#nav {
+	position: absolute;
+	top: 420px;
+	font-family: 'Oswald';
+	font-size: 1.3em;
+	background: white;
+	overflow: hidden;
+	padding: 10px;
+	
+}
+
+ul#nav li, ul#nav {
+	list-style: none;
+	list-style-type: none;
+	margin-left: 0px;
+}
+
+#nav a {
+	color: #bdbdbd;
+	text-decoration: none;
+}
+
+#nav a:hover {
+	color: #969696;
+}
+/* end nav */
+
+img.map {
+	width: 77px;
+	height: 77px;
+}
+
+/* home section */
+
+.give-take {
+	color: #FF8E8E;
+}
+
+.give-take .content {
+	width: 357px;
+	background-color: transparent;
+	padding: 13px;
+}
+
+.give-take .tagline {
+	position: relative;
+	left: 150px;
+	background-color: #FF8E8E;
+	color: #FFF;
+	width: 420px;
+	font-size: 1.4em;
+}
+
+.give-take {
+	background: #FF8E8E url('images/bg-home.jpg') no-repeat top center;
+	height: 800px;
+}
+
+.location {
+	position: absolute;
+	top: 20px;
+	width: 300px;
+	color: #868686;
+	font-size: 1em;
+	line-height: 1.4em;
+}
+
+/* what we sell section */
+
+.what-we-sell {
+	background: #9cadc7 url('images/bg-whatwesell.jpg') no-repeat top center;
+	height: 800px
+}
+
+.what-we-sell .content {
+	width: 400px;
+	position: absolute;
+	right: 0px;
+}
+
+.what-we-sell h2 {
+	background: #9cadc7;
+	right:60px;
+	position: relative;
+}
+
+.what-we-sell .tagline  {
+	color: #657b9d;
+}
+
+.what-we-sell h3 {
+	color: #9cadc7;
+	margin-bottom: 0px;
+}
+
+.what-we-sell .panel {
+	width: 280px;
+	float: right;
+	padding:10px 20px;
+	background: white;
+}
+.what-we-sell .panel p {
+	padding: 0px;
+	margin-bottom: 20px;
+}	
+
+/* how does it work section */
+
+.how-does-it-work {
+	background: #ec582a url('images/bg-howitworks.jpg') no-repeat top center;
+	height: 800px
+}
+
+.how-does-it-work .content {
+	width: 800px;
+	position: absolute;
+	right: 0px;
+	padding-top: 100px;
+}
+
+.how-does-it-work h2 {
+	background: #ec582a;
+}
+
+.how-does-it-work .tagline {
+	color: #ec582a;
+	width: 330px;
+	margin-left: 100px;
+}
+
+.how-does-it-work .panel {
+	width: 310px;
+	position: absolute;
+	top:60px;
+	right: 0px;
+}
+
+.how-does-it-work h3 {
+	color: #ec582a;
+	margin-bottom: 0px;
+}
+
+
+.how-does-it-work .panel p {
+	background: transparent;
+	padding: 0px 0px 10px;
+	margin-bottom: 20px;
+	border-bottom: 1px #ccc solid;
+	 
+}	
+
+
+/* charities section */
+
+.charities {
+	background: #fffecb url('images/bg-charity.jpg') no-repeat top center;
+	height: 800px
+}
+
+.charities .content {
+	width: 800px;
+	position: absolute;
+	right: 0px;
+	padding-top: 100px;
+}
+
+.charities h2 {
+	background: #fffecb;
+	color: #99734f;
+}
+
+.charities h2 a {
+	background: #fffecb;
+	color: #99734f;
+	width: 153px;
+}
+
+.charities .tagline {
+	color: #99734f;
+	width: 350px;
+	margin-left: -153px;
+}
+
+.charities .panel {
+	width: 500px;
+	position: absolute;
+	top:30px;
+	right: 0px;
+}
+
+.charities h3 {
+	color: #fffecb;
+	margin-bottom: 0px;
+}
+
+
+.charities .panel p {
+	background: transparent;
+	padding: 0px;
+	color: #262626;
+}	
+
+.charities .panel p a {
+	color: #fffecb;
+}
+
+.charities a {
+	color: #99734f;
+}
+
+.charities .panel div h3 {
+	width: 60px;
+	margin-right: 10px;
+	color: white;
+	text-align: right;
+	float: left;
+	font-size: 1.2em;
+	clear: both;
+}
+
+.charities .panel div p {
+	float: right;
+    padding-top: 1px;
+    width: 430px;
+	font-size: 0.9em;
+}
+
+/* information section */
+
+.information {
+	background: #9cadc7 url('images/bg-info.jpg') no-repeat top center;
+	height: 800px
+}
+
+.information .content {
+	width: 400px;
+	position: absolute;
+	left: 0px;
+	padding-top: 300px;
+}
+
+.information h3 {
+	color: #fffecb;
+	margin-bottom: 0px;
+	font-size: 2em;
+}
+
+
+.information p {
+	background: transparent;
+	padding: 0px;
+	border-bottom: 1px solid #fffecb;
+	padding-bottom: 10px
+}	
+
+.information p, .information p a {
+	color: #fffecb;
+	font-weight: bold;
+	font-size: 1.2em;
+}
+
+.information .footer {
+	position: absolute;
+	bottom: 20px;
+	color: #fffecb;
+	width: 1000px;
+	margin: auto;
+}
+
+.information {
+	position: relative;
+}
+
+.information .jbasewrap.passthrough {
+	position: static;
+}
+
+/* ------------------------------- Generic Typography */
+
+
+body {
+	font-family: 'PT Sans';
+}
+
+p {
+	background: white;
+	padding: 15px;
+}
+
+.tagline {
+	font-size: 1.1em;
+	padding: 10px 20px;
+}
+
+
+h1, h2, h3 {
+	font-family: 'Oswald';
+}
+
+h1 {
+	text-align: center;
+	font-size: 4.6em;
+	text-transform: uppercase;
+	letter-spacing: 0.1em;
+	background-color: white;
+	padding: 2px 0px 5px;
+	margin-bottom: 0px;
+}
+
+h2 {
+	text-transform: lowercase;
+	color: white;
+	font-size: 4em;
+	text-decoration: none;
+	padding: 5px 15px;
+	display: inline-block;
+	font-family: 'Francois One';
+	margin-bottom: 0px;
+}
+
+h3 {
+	font-size: 1.5em;
+}
+
+h2 a {
+	color: white;	
+	text-decoration: none;
+}
+
+a.access {
+	display: none;
+}

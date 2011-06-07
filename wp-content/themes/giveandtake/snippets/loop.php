@@ -1,7 +1,12 @@
 <?php
+wp_nav_menu( array(
+	'container' => 'false',
+	'theme_location' => 'main_menu', 
+	'menu_id' => 'nav'
+) );
+
 $i=0;
 $page_count = $wp_query->post_count;
-// The Loop
 while ( have_posts() ) : the_post();
 $i = $wp_query->current_post; ?>
 <?php if($i!=0) { ?>
@@ -19,17 +24,21 @@ $i = $wp_query->current_post; ?>
 			<?php } else { ?>
 			<h2><?php the_title(); ?></h2>
 			<?php } ?>
-			<p class="tagline"><?php the_excerpt(); ?></p>
+			<p class="tagline"><?php echo get_the_excerpt(); ?></p>
 			<?php the_content();
 		
 		} else {
 		
 			the_content();
-			the_excerpt();
 		
 		} ?>		
 		</div>
 	</div>
+	<?php if($i==$page_count-1) { ?>
+	<div class="jbasewrap passthrough">
+		<div class="footer"><?php $footer = get_page_by_path('footer'); echo $footer->post_content; ?></div>
+	</div>
+	<?php } ?>
 </div>
 <?php if($i!=$page_count-1) { ?>
 	<div class="diagonal fullwidth">

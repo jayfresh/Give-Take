@@ -1,3 +1,8 @@
+/* this is up to you */
+.jbasewrap {
+	width: 1000px;
+}
+
 
 /*--------------------------Global */
 
@@ -9,14 +14,12 @@ body {
 	background-position: 0px 0px;
 }
 
-/* Add to Body for Baselining */
-.grid { 
+.grid {
 	background-image: url(../images/24px6inc_grid.png);
 }
 
 .jbasewrap {
 	/*padding: 48px 0;*/
-	width: 940px;
 	margin: auto;
 	font-size: 1.4em;
 	line-height: 1.714em;
@@ -26,6 +29,13 @@ a {
 	color: #fca961;
 	text-decoration: underline;
 }
+
+/*--------------------------Grid Modification */
+
+.grid4col, .grid2col {
+	/*margin-top: 0.071em; */
+} 
+
 
 
 
@@ -82,20 +92,8 @@ ul, ol {
 	
 }
 
-ul.noMargin, .ol.noMargin {
-	margin: 0 0 1.714em 0;	
-}
-
 ul li {
 	list-style: disc;
-}
-
-ul.noBullets ul.bullets li {
-	list-style: disc;
-}
-
-ul.noBullets li {
-	list-style: none;
 }
 
 ol li {
@@ -195,6 +193,19 @@ h6 {
 }
 
 
+
+
+
+
+/*--------------------------Colours */
+
+.orange {
+	color: #fbb75f;
+}
+
+
+
+
 /*--------------------------Div Modifiers */
 
 a.trigger {
@@ -220,18 +231,11 @@ a.trigger {
 	margin-bottom: 0;
 }
 
-.nomargintop {
-	margin-top: 0;
-}
-
 .margintop {
 	margin-top: 24px;
 }
 .marginbottom {
 	margin-bottom: 24px;
-}
-.marginbottomsmall {
-	margin-bottom: 12px;
 }
 
 .margintopsmall {
@@ -260,7 +264,7 @@ a.trigger {
 }
 
 .borderbottom {
-	border-bottom: #e65d27 0.071em solid;
+	border-bottom: #fbb75f 0.071em solid;
 }
 
 /*--------------------------Forms */
