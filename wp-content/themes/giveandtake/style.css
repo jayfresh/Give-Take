@@ -55,7 +55,7 @@ Version: 1.0
 }
 
 #navContainer {
-	z-index: 1;
+	z-index: 2;
 }
 
 #nav {
@@ -65,7 +65,7 @@ Version: 1.0
 	position: absolute;
 	top: 416px;
 	left: 13px;
-	width: 327px; /* 357px (the .content width) - 2*15px */
+	width: 150px;
 	overflow: hidden;
 	background-color: white;
 }

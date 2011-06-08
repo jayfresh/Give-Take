@@ -29,16 +29,17 @@ $i = $wp_query->current_post; ?>
 			if($i==0) { ?>
 			<h1><?php the_title(); ?></h1>
 			<?php } else { ?>
-			<h2><?php the_title(); ?></h2>
+			<h2><a name="<?php the_slug(); ?>"><?php the_title(); ?></a></h2>
 			<?php } ?>
 			<p class="tagline"><?php echo do_shortcode(get_the_excerpt()); ?></p>
 			<div class="panel">
 			<?php the_content(); ?>
 			</div>
 
-		<?php } else {
+		<?php } else { ?>
 		
-			the_content();
+			<a name="<?php the_slug(); ?>"></a>
+			<?php the_content();
 		
 		} ?>		
 		</div>
