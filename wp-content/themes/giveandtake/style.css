@@ -183,7 +183,7 @@ img.map {
 }
 
 .how-does-it-work .content {
-	width: 800px;
+	width: 987px;
 	position: absolute;
 	right: 0px;
 	padding-top: 100px;
@@ -191,19 +191,22 @@ img.map {
 
 .how-does-it-work h2, .how-does-it-work h1 {
 	background: #ec582a;
+	margin-top: 200px;
 }
 
 .how-does-it-work .tagline {
 	color: #ec582a;
-	width: 330px;
+	width: 340px;
 	margin-left: 100px;
 }
 
 .how-does-it-work .panel {
-	width: 310px;
+	width: 440px;
+	padding: 20px;
 	position: absolute;
-	top:60px;
+	top:20px;
 	right: 0px;
+	background: white;
 }
 
 .how-does-it-work h3 {
@@ -229,7 +232,7 @@ img.map {
 }
 
 .charities .content {
-	width: 800px;
+	width: 783px;
 	position: absolute;
 	right: 0px;
 	padding-top: 100px;
@@ -334,6 +337,8 @@ img.map {
 .information p, .information p a {
 	color: #fffecb;
 	font-weight: bold;
+	text-shadow: 1px 1px 2px #99734f; 
+
 }
 
 .information .location {
@@ -368,6 +373,40 @@ img.map {
 
 .information .jbasewrap.passthrough {
 	position: static;
+}
+
+/* ------------------------------- Terms pages */
+
+.single.terms.fullwidth {
+	background: url('images/bg-terms.jpg');
+	background-position: center top;
+	background-repeat: no-repeat;
+	height: 100%;
+	overflow: hidden;
+}
+
+.single.terms h2, .single.terms h1 {
+	color: #868686;
+	font-size: 2.5em;
+}
+
+.single.terms h2 {
+	font-size: 1.4em;
+}
+
+.single.terms .content {
+	width: 600px;
+	float: right;
+	background: white;
+	margin-bottom: 40px;
+}
+
+.single.terms .content p {
+	padding-top: 0px;
+}
+
+.single.terms .content .tagline {
+	display: none;
 }
 
 /* ------------------------------- Generic Typography */
