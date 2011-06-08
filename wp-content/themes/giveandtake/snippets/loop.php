@@ -12,11 +12,8 @@ $footer_id = $footer->ID;
 $i=0;
 $page_count = $wp_query->post_count;
 while ( have_posts() ) : the_post();
-if($post->ID==$footer_id) {
-	continue;
-}
-$i = $wp_query->current_post; ?>
-<?php if($i!=0) { ?>
+$i = $wp_query->current_post;
+if($i!=0) { ?>
 <div class="diagonal top fullwidth">
 	<img alt="stripe" src="<?php bloginfo('stylesheet_directory'); ?>/images/diag-<?php the_slug(); ?>.png" />
 </div>
