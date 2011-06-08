@@ -36,6 +36,13 @@ function slideshow_func() {
 
 add_shortcode('slideshow', 'slideshow_func');
 
+function date_func() {
+	echo '&copy;'.date('Y');
+}
+
+add_shortcode('date', 'date_func');
+
+
 function address_func() {
      return '<div class="location"><img class="map left marginright" src="'.get_bloginfo('stylesheet_directory').'/images/map.jpg" alt="Link to Google Map showing Give and Take shop location" />' .
 		'<div class="adr">' .

@@ -22,9 +22,9 @@ Version: 1.0
 	padding-bottom: 33px;
 }
 
-/*.jbasewrap {
-	width: 1200px;
-}*/
+.jbasewrap {
+	padding-bottom: 0px;
+}
 
 
 
@@ -63,7 +63,7 @@ Version: 1.0
 	font-family: 'Oswald';
 	font-size: 1.3em;
 	position: absolute;
-	top: 416px;
+	top: 386px;
 	left: 13px;
 	width: 150px;
 	overflow: hidden;
@@ -100,7 +100,7 @@ img.map {
 .give-take .content {
 	width: 357px;
 	background-color: transparent;
-	padding: 13px;
+	padding: 13px 13px 0px;
 }
 
 .give-take .tagline {
@@ -117,6 +117,11 @@ img.map {
 	height: 800px;
 }
 
+.give-take .panel p {
+	margin-bottom: 0px;
+}
+
+
 .location {
 	position: absolute;
 	top: 20px;
@@ -124,6 +129,9 @@ img.map {
 	color: #868686;
 	font-size: 1em;
 	line-height: 1.4em;
+}
+
+.give-take .location {
 	margin-left: 16px;
 }
 
@@ -138,6 +146,7 @@ img.map {
 	width: 400px;
 	position: absolute;
 	right: 0px;
+	top:135px;
 }
 
 .what-we-sell h2 {
@@ -295,10 +304,10 @@ img.map {
 }
 
 .information .content {
-	width: 400px;
-	position: absolute;
-	left: 0px;
-	padding-top: 300px;
+	left: 220px;
+    padding-top: 100px;
+    position: absolute;
+    width: 290px;
 }
 
 .information h3 {
@@ -311,15 +320,35 @@ img.map {
 .information p {
 	background: transparent;
 	padding: 0px;
-	border-bottom: 1px solid #fffecb;
-	padding-bottom: 10px
+	margin-bottom: 0px;
+	margin-top: 10px;
+	font-size: 1.2em;
 }	
+
+.information .content div.borderbottom {
+	border-bottom: 1px solid #fffecb;
+	padding-bottom: 10px;
+	margin-bottom: 20px;
+}
 
 .information p, .information p a {
 	color: #fffecb;
 	font-weight: bold;
-	font-size: 1.2em;
 }
+
+.information .location {
+	color: #fffecb;
+	font-weight: bold;
+	font-size: 1em;
+	margin-top: 10px
+
+}
+
+.information p span {
+	display: inline-block;
+	width: 60px;
+}
+
 
 .information .location {
 	position: static;
@@ -405,7 +434,7 @@ a.access {
 /*-------------------------------- Slideshow */
 .slideshowContainer {
 	height: 380px;
-    left: -600px;
+    left: -587px;
     position: absolute;
     top: 141px;
     width: 490px;
