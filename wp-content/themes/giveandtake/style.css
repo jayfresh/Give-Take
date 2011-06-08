@@ -55,17 +55,17 @@ Version: 1.0
 }
 
 #navContainer {
-	z-index: 1;
+	z-index: 2;
 }
 
 #nav {
-	padding: 15px;
+	padding: 25px 15px 15px 15px;
 	font-family: 'Oswald';
 	font-size: 1.3em;
 	position: absolute;
 	top: 416px;
 	left: 13px;
-	width: 327px; /* 357px (the .content width) - 2*15px */
+	width: 150px;
 	overflow: hidden;
 	background-color: white;
 }
