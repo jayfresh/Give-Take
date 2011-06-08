@@ -2,6 +2,14 @@ $(document).ready(function() {
 	$('span.and').text('+');
 });
 
+$('#slideshow').slideViewerPro({
+		galBorderWidth: 0,
+		typo: true,
+		thumbsActiveBorderColor: '#9cadc7',
+		buttonsTextColor: '#9cadc7',
+		autoslide: true
+	});
+
 $(document).ready(function() {
 	$('a[rel="self"]').click(function(e){
 		e.preventDefault();

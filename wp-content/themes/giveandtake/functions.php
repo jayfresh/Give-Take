@@ -1,5 +1,8 @@
 <?php
 
+add_theme_support( 'post-thumbnails' );
+add_image_size( 'slideshow-img', 470, 320, true ); 
+
 function givetake_init() {
 	add_post_type_support( 'page', 'excerpt' );
 }
@@ -10,12 +13,14 @@ function add_stylesheets() { ?>
 	<link href='http://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'>
 	<link href='http://fonts.googleapis.com/css?family=Francois+One' rel='stylesheet' type='text/css'>
 	<link href='http://fonts.googleapis.com/css?family=PT+Sans:regular,bold' rel='stylesheet' type='text/css'>
+	<link href='wp-content/themes/giveandtake/css/svwp_style.css' rel='stylesheet' type='text/css'>
 <?php }
 
 add_action('wp_head', 'add_stylesheets');
 
 function add_scripts() { ?>
 	<script type="text/javascript" src="wp-content/themes/giveandtake/js/jquery.scrollTo-1.4.2-min.js"></script>
+	<script type="text/javascript" src="wp-content/themes/giveandtake/js/jquery.slideViewerPro.1.0.js"></script>
 <?php }
 
 add_action('wp_footer', 'add_scripts');
@@ -24,6 +29,12 @@ function the_slug() {
 	global $post;
 	echo $post->post_name;
 }
+
+function slideshow_func() {
+	get_template_part('snippets/slideshow');
+}
+
+add_shortcode('slideshow', 'slideshow_func');
 
 function address_func() {
      return '<div class="location"><img class="map left marginright" src="'.get_bloginfo('stylesheet_directory').'/images/map.jpg" alt="Link to Google Map showing Give and Take shop location" />' .
