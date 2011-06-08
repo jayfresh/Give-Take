@@ -1,5 +1,13 @@
 $(document).ready(function() {
 
+	$('#slideshow').slideViewerPro({
+		galBorderWidth: 0,
+		typo: true,
+		thumbsActiveBorderColor: '#9cadc7',
+		buttonsTextColor: '#9cadc7',
+		autoslide: false
+	});
+
 	var $nav = $('#nav'),
 		$navLinks = $nav.find('a'),
 		diagOffset = 100, /* this is the difference between the top of the fullwidth container and what appears to be the top thanks to the overlapping diagonal */

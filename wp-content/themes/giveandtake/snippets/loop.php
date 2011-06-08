@@ -12,22 +12,19 @@ $footer_id = $footer->ID;
 $i=0;
 $page_count = $wp_query->post_count;
 while ( have_posts() ) : the_post();
-if($post->ID==$footer_id) {
-	continue;
-}
-$i = $wp_query->current_post; ?>
-<?php if($i!=0) { ?>
+$i = $wp_query->current_post;
+if($i!=0) { ?>
 <div class="diagonal top fullwidth">
 	<img alt="stripe" src="<?php bloginfo('stylesheet_directory'); ?>/images/diag-<?php the_slug(); ?>.png" />
 </div>
 <?php } ?>
-<div class="fullwidth <?php the_slug(); ?>">
+<div class="fullwidth <?php the_slug(); if($page_count==1) { echo " single"; } ?>">
 	<div class="jbasewrap">
 		<div class="content">
 		<?php if($page_count==1 || $i!=$page_count-1) {
 		
 			if($i==0) { ?>
-			<h1><?php the_title(); ?></h1>
+			<h1<?php if(is_home()) { echo ' id="logo"'; } ?>><?php the_title(); ?></h1>
 			<?php } else { ?>
 			<h2><a name="<?php the_slug(); ?>"><?php the_title(); ?></a></h2>
 			<?php } ?>
@@ -44,7 +41,7 @@ $i = $wp_query->current_post; ?>
 		} ?>		
 		</div>
 	</div>
-	<?php if($i==$page_count-1) { ?>
+	<?php if($page_count!=1 && $i==$page_count-1) { ?>
 	<div class="jbasewrap passthrough">
 		<div class="footer"><?php echo do_shortcode($footer->post_content); ?></div>
 	</div>
