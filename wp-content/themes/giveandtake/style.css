@@ -140,7 +140,7 @@ img.map {
 	right: 0px;
 }
 
-.what-we-sell h2 {
+.what-we-sell h2, .what-we-sell h1 {
 	background: #9cadc7;
 	right:60px;
 	position: relative;
@@ -180,7 +180,7 @@ img.map {
 	padding-top: 100px;
 }
 
-.how-does-it-work h2 {
+.how-does-it-work h2, .how-does-it-work h1 {
 	background: #ec582a;
 }
 
@@ -226,12 +226,12 @@ img.map {
 	padding-top: 100px;
 }
 
-.charities h2 {
+.charities h2, .charities h1 {
 	background: #fffecb;
 	color: #99734f;
 }
 
-.charities h2 a {
+.charities h2 a, .charities h1 a {
 	background: #fffecb;
 	color: #99734f;
 	width: 153px;
@@ -363,7 +363,7 @@ h1, h2, h3 {
 	font-family: 'Oswald';
 }
 
-h1 {
+h1#logo {
 	margin-bottom: 0px;	
 	background: url('images/logo.png');
 	text-indent: -9999px;
@@ -377,7 +377,7 @@ h1 {
 
 
 
-h2 {
+h2, .single h1 {
 	text-transform: lowercase;
 	color: white;
 	font-size: 4em;
@@ -392,7 +392,7 @@ h3 {
 	font-size: 1.5em;
 }
 
-h2 a {
+h2 a, .single h1 a {
 	color: white;	
 	text-decoration: none;
 }

@@ -7,7 +7,7 @@ $('#slideshow').slideViewerPro({
 		typo: true,
 		thumbsActiveBorderColor: '#9cadc7',
 		buttonsTextColor: '#9cadc7',
-		autoslide: true
+		autoslide: false
 	});
 
 $(document).ready(function() {
