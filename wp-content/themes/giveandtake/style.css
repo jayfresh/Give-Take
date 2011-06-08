@@ -433,5 +433,6 @@ a.access {
 
 }
 
-
-
+.slideshowContainer p {
+	background-color: transparent;
+}
