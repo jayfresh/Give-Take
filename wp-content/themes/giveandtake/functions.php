@@ -14,6 +14,12 @@ function add_stylesheets() { ?>
 
 add_action('wp_head', 'add_stylesheets');
 
+function add_scripts() { ?>
+	<script type="text/javascript" src="wp-content/themes/giveandtake/js/jquery.scrollTo-1.4.2-min.js"></script>
+<?php }
+
+add_action('wp_foot', 'add_scripts');
+
 function the_slug() {
 	global $post;
 	echo $post->post_name;
