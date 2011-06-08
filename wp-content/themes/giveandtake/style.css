@@ -54,15 +54,20 @@ Version: 1.0
 	position: relative;
 }
 
+#navContainer {
+	z-index: 1;
+}
+
 #nav {
-	position: absolute;
-	top: 420px;
+	padding: 10px;
 	font-family: 'Oswald';
 	font-size: 1.3em;
-	background: white;
+	position: absolute;
+	top: 507px;
+	left: 13px;
+	width: 331px; /* 357px (the .content width) - 2*13px */
 	overflow: hidden;
-	padding: 10px;
-	
+	background-color: white;
 }
 
 ul#nav li, ul#nav {

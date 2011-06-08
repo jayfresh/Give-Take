@@ -1,6 +1,8 @@
 <?php
 wp_nav_menu( array(
-	'container' => 'false',
+	'container' => 'div',
+	'container_id' => 'navContainer',
+	'container_class' => 'jbasewrap',
 	'theme_location' => 'main_menu', 
 	'menu_id' => 'nav'
 ) );
@@ -43,7 +45,7 @@ $i = $wp_query->current_post; ?>
 	</div>
 	<?php if($i==$page_count-1) { ?>
 	<div class="jbasewrap passthrough">
-		<div class="footer"><?php echo $footer->post_content; ?></div>
+		<div class="footer"><?php echo do_shortcode($footer->post_content); ?></div>
 	</div>
 	<?php } ?>
 </div>
