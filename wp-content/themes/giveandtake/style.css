@@ -363,14 +363,18 @@ h1, h2, h3 {
 }
 
 h1 {
-	text-align: center;
-	font-size: 4.6em;
-	text-transform: uppercase;
-	letter-spacing: 0.1em;
-	background-color: white;
-	padding: 2px 0px 5px;
-	margin-bottom: 0px;
+	margin-bottom: 0px;	
+	background: url('images/logo.png');
+	text-indent: -9999px;
+	overflow: hidden;
+	width: 357px;
+	height: 83px;
+	background-position: center center;
+	background-repeat: no-repeat;
+	
 }
+
+
 
 h2 {
 	text-transform: lowercase;
