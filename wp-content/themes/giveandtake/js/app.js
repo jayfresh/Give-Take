@@ -6,7 +6,7 @@ $(document).ready(function() {
 	var $nav = $('#nav'),
 		$navLinks = $nav.find('a'),
 		diagOffset = 100, /* this is the difference between the top of the fullwidth container and what appears to be the top thanks to the overlapping diagonal */
-		navFixedTop = 10, /* this is how far we want the nav to stay from the top of the page when it's fixed */
+		navFixedTop = 0, /* this is how far we want the nav to stay from the top of the page when it's fixed */
 		navFixedLeft = $nav.offset().left,
 		navPosLeft = $nav.css('left'),
 		navPosTop = $nav.css('top'),
