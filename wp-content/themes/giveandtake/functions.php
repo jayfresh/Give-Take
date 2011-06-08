@@ -18,7 +18,7 @@ function add_scripts() { ?>
 	<script type="text/javascript" src="wp-content/themes/giveandtake/js/jquery.scrollTo-1.4.2-min.js"></script>
 <?php }
 
-add_action('wp_foot', 'add_scripts');
+add_action('wp_footer', 'add_scripts');
 
 function the_slug() {
 	global $post;

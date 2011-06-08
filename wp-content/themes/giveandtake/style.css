@@ -59,13 +59,13 @@ Version: 1.0
 }
 
 #nav {
-	padding: 10px;
+	padding: 15px;
 	font-family: 'Oswald';
 	font-size: 1.3em;
 	position: absolute;
-	top: 507px;
+	top: 416px;
 	left: 13px;
-	width: 331px; /* 357px (the .content width) - 2*13px */
+	width: 327px; /* 357px (the .content width) - 2*15px */
 	overflow: hidden;
 	background-color: white;
 }
