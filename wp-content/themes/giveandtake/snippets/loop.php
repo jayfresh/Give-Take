@@ -27,8 +27,14 @@ if($i!=0) { ?>
 			<h1<?php if(is_home()) { echo ' id="logo"'; } ?>><?php the_title(); ?></h1>
 			<?php } else { ?>
 			<h2><a name="<?php the_slug(); ?>"><?php the_title(); ?></a></h2>
+			<?php }
+
+			// if not a child of homepage, don't show excerpt
+			$frontpage_id = get_option('page_on_front');
+			if($post->post_parent==$frontpage_id) { ?>
+			<p class="tagline"><?php echo do_shortcode(get_the_excerpt()); ?></p>				
 			<?php } ?>
-			<p class="tagline"><?php echo do_shortcode(get_the_excerpt()); ?></p>
+
 			<div class="panel">
 			<?php the_content(); ?>
 			</div>
