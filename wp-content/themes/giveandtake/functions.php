@@ -32,6 +32,15 @@ function address_func() {
 
 add_shortcode('address', 'address_func');
 
+function and_func($atts, $content) {
+	if(!$content) {
+		$content = "and";
+	}
+	return '<span class="and">'.$content.'</span>';
+}
+
+add_shortcode('and', 'and_func');
+
 function address_fields_init() {
 	add_settings_section('address_fields_section', 'Your address', 'address_fields_section_callback', 'general');
 	

@@ -86,7 +86,7 @@ img.map {
 	height: 77px;
 }
 
-/* home section */
+/* give-take section */
 
 .give-take {
 	color: #FF8E8E;
@@ -108,7 +108,7 @@ img.map {
 }
 
 .give-take {
-	background: #FF8E8E url('images/bg-home.jpg') no-repeat top center;
+	background: #FF8E8E url('images/bg-give-take.jpg') no-repeat top center;
 	height: 800px;
 }
 
@@ -124,8 +124,8 @@ img.map {
 /* what we sell section */
 
 .what-we-sell {
-	background: #9cadc7 url('images/bg-whatwesell.jpg') no-repeat top center;
-	height: 800px
+	background: #9cadc7 url('images/bg-what-we-sell.jpg') no-repeat top center;
+	height: 870px;
 }
 
 .what-we-sell .content {
@@ -163,8 +163,8 @@ img.map {
 /* how does it work section */
 
 .how-does-it-work {
-	background: #ec582a url('images/bg-howitworks.jpg') no-repeat top center;
-	height: 800px
+	background: #ec582a url('images/bg-how-does-it-work.jpg') no-repeat top center;
+	height: 1010px;
 }
 
 .how-does-it-work .content {
@@ -209,8 +209,8 @@ img.map {
 /* charities section */
 
 .charities {
-	background: #fffecb url('images/bg-charity.jpg') no-repeat top center;
-	height: 800px
+	background: #fffecb url('images/bg-charities.jpg') no-repeat top center;
+	height: 840px;
 }
 
 .charities .content {
@@ -265,7 +265,7 @@ img.map {
 }
 
 .charities .panel div h3 {
-	width: 60px;
+	width: 80px;
 	margin-right: 10px;
 	color: white;
 	text-align: right;
@@ -277,14 +277,14 @@ img.map {
 .charities .panel div p {
 	float: right;
     padding-top: 1px;
-    width: 430px;
+    width: 410px;
 	font-size: 0.9em;
 }
 
 /* information section */
 
 .information {
-	background: #9cadc7 url('images/bg-info.jpg') no-repeat top center;
+	background: #9cadc7 url('images/bg-information.jpg') no-repeat top center;
 	height: 800px
 }
 
@@ -313,6 +313,10 @@ img.map {
 	color: #fffecb;
 	font-weight: bold;
 	font-size: 1.2em;
+}
+
+.information .location {
+	position: static;
 }
 
 .information .footer {
