@@ -44,7 +44,7 @@ add_shortcode('date', 'date_func');
 
 
 function address_func() {
-     return '<div class="location"><img class="map left marginright" src="'.get_bloginfo('stylesheet_directory').'/images/map.jpg" alt="Link to Google Map showing Give and Take shop location" />' .
+     return '<div class="location"><a href="http://maps.google.co.uk/maps?f=q&source=s_q&hl=en&geocode=&q=3+LORDSHIP+LANE,+EAST+DULWICH,+SE22+8EW&sll=51.514681,-0.204186&sspn=0.028149,0.077162&ie=UTF8&hq=&hnear=3+Lordship+Ln,+Camberwell,+Greater+London+SE22+8,+United+Kingdom&z=16" target="_blank"><img class="map left marginright" src="'.get_bloginfo('stylesheet_directory').'/images/map.jpg" alt="Link to Google Map showing Give and Take shop location" /></a>' .
 		'<div class="adr">' .
 			'<div class="street-address">3 Lordship Lane</div>' .
 			'<div class="extended-address">East Dulwich</div>' .

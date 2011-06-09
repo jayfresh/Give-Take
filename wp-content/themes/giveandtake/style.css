@@ -135,6 +135,35 @@ img.map {
 	margin-left: 16px;
 }
 
+#tweetr {
+	background: none repeat scroll 0 0 white;
+    position: absolute;
+    right: 0;
+    top: 399px;
+    width: 300px;
+    font-size: 0.8em;
+    line-height: 1.4em;
+    padding: 10px;
+}
+
+#tweetr h3 a {
+	text-decoration: none;
+}
+
+#tweetr a {color: #FF8E8E;}
+
+#tweetr div.tb_tweet, 
+#tweetr div.tb_tweetlist { border: none;}
+
+#tweetr div.tb_msg { display: none; }
+
+#tweetr div.tb_tweet { padding: 0px; }
+
+#tweetr a.tb_photo { 
+	background-color: transparent; 
+	margin: 0px 10px 30px 0px;
+}
+
 /* what we sell section */
 
 .what-we-sell {
