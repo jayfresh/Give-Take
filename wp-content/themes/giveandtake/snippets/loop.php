@@ -25,6 +25,7 @@ if($i!=0) { ?>
 		
 			if($i==0) { ?>
 			<h1<?php if(is_home()) { echo ' id="logo"'; } ?>><?php the_title(); ?></h1>
+				<?php if(is_home()) { ?>
 			<div id="tweetr">
 			<h3><a href="http://twitter.com/" target="_blank">On Twitter:</a></h3>
 				<?php 
@@ -37,6 +38,7 @@ if($i!=0) { ?>
 				));
 				?>	
 			</div>
+				<?php } ?>
 			<?php } else { ?>
 			<h2><a name="<?php the_slug(); ?>"><?php the_title(); ?></a></h2>
 			<?php }
