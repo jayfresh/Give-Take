@@ -180,7 +180,6 @@ jQuery.fn.slideViewerPro = function(settings) {
 			authorityMixing();
 	
 			if(settings.autoslide){
-				console.log($('div#thumbSlider'+j));
 					var i = 1;
 					
 					jQuery("div#thumbSlider" + j).everyTime(settings.asTimer, "asld", function() {			

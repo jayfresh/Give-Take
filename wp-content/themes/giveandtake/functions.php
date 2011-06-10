@@ -13,14 +13,14 @@ function add_stylesheets() { ?>
 	<link href='http://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'>
 	<link href='http://fonts.googleapis.com/css?family=Francois+One' rel='stylesheet' type='text/css'>
 	<link href='http://fonts.googleapis.com/css?family=PT+Sans:regular,bold' rel='stylesheet' type='text/css'>
-	<link href='wp-content/themes/giveandtake/css/svwp_style.css' rel='stylesheet' type='text/css'>
+	<link href='<?php bloginfo( 'stylesheet_directory' ); ?>/css/svwp_style.css' rel='stylesheet' type='text/css'>
 <?php }
 
 add_action('wp_head', 'add_stylesheets');
 
 function add_scripts() { ?>
-	<script type="text/javascript" src="wp-content/themes/giveandtake/js/jquery.scrollTo-1.4.2-min.js"></script>
-	<script type="text/javascript" src="wp-content/themes/giveandtake/js/jquery.slideViewerPro.1.0.js"></script>
+	<script type="text/javascript" src="<?php bloginfo( 'stylesheet_directory' ); ?>/js/jquery.scrollTo-1.4.2-min.js"></script>
+	<script type="text/javascript" src="<?php bloginfo( 'stylesheet_directory' ); ?>/js/jquery.slideViewerPro.1.0.js"></script>
 <?php }
 
 add_action('wp_footer', 'add_scripts');

@@ -17,17 +17,25 @@ $(document).ready(function() {
 		navPosTop = $nav.css('top'),
 		scrollTopLimit = $nav.offset().top - navFixedTop,
 		$anchors = $('a[name]'),
-		scrollBottomLimit = $anchors.eq($anchors.length-1).closest('.fullwidth').offset().top+diagOffset,
-		navPosBottom = navFixedTop + scrollBottomLimit;
+		$lastAnchorContainer = $anchors.length ? $anchors.eq($anchors.length-1).closest('.fullwidth') : null,
+		scrollBottomLimit = $lastAnchorContainer ? $lastAnchorContainer.offset().top+diagOffset : scrollTopLimit,
+		navPosBottom = navFixedTop + scrollBottomLimit; // this is not used for pages where scrollBottomLimit = scollTopLimit
+
 	$navLinks.click(function(e){
 		e.preventDefault();
 		var href = $(this).attr('href'),
-			goTo = 0;
+			goTo = 0,
+			$navMatch;
 		href = href.substring(href.lastIndexOf('/')+1);
-		if($navLinks.index(this)!==$navLinks.length-1) {
-			goTo = $('a[name='+href+']').closest('.fullwidth').offset().top+diagOffset;
+		$navMatch = $('a[name='+href+']');
+		if($navMatch.length) {
+			if($navLinks.index(this)!==$navLinks.length-1) {
+				goTo = $navMatch.closest('.fullwidth').offset().top+diagOffset;
+			}
+			$.scrollTo(goTo, 300);
+		} else { // we're probably on a content page - let's go back to the homepage
+			window.location = $navLinks.eq($navLinks.length-1).attr('href')+"#"+href;
 		}
-		$.scrollTo(goTo, 300);
 		return true;
 	});
 	
