@@ -84,7 +84,9 @@ $(document).ready(function() {
 	$('span.and').text('+');
 	$('.diagonal').css('lineHeight', '1px');
 	$('.diagonal').css('lineHeight', '0px'); // force reflow on IE7
-	
+});
+
+$(window).bind("load", function() {
 	// activate image carousel
 	$('#slideshow').slideViewerPro({
 		galBorderWidth: 0,
