@@ -32,6 +32,7 @@ Version: 1.0
 	/*position: absolute;
 	bottom: 0;*/
 	height: 0px;
+	line-height: 0px;
 	z-index: 1;
 }
 .diagonal.top {
@@ -215,7 +216,7 @@ img.map {
 	width: 987px;
 	position: absolute;
 	right: 0px;
-	padding-top: 100px;
+	padding-top: 170px;
 }
 
 .how-does-it-work h2, .how-does-it-work h1 {
@@ -480,7 +481,7 @@ h2, .single h1 {
 	font-size: 4em;
 	text-decoration: none;
 	padding: 5px 15px;
-	display: inline-block;
+	display: inline;
 	font-family: 'Francois One';
 	margin-bottom: 0px;
 }

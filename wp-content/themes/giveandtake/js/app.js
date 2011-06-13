@@ -1,17 +1,9 @@
 $(document).ready(function() {
 
-	$('#slideshow').slideViewerPro({
-		galBorderWidth: 0,
-		typo: true,
-		thumbsActiveBorderColor: '#9cadc7',
-		buttonsTextColor: '#9cadc7',
-		autoslide: false
-	});
-
 	var $nav = $('#nav'),
 		$navLinks = $nav.find('a'),
-		diagOffset = 100, /* this is the difference between the top of the fullwidth container and what appears to be the top thanks to the overlapping diagonal */
-		navFixedTop = 0, /* this is how far we want the nav to stay from the top of the page when it's fixed */
+		diagOffset = 100, // this is the difference between the top of the fullwidth container and what appears to be the top thanks to the overlapping diagonal
+		navFixedTop = 0, // this is how far we want the nav to stay from the top of the page when it's fixed
 		navFixedLeft = $nav.offset().left,
 		navPosLeft = $nav.css('left'),
 		navPosTop = $nav.css('top'),
@@ -39,7 +31,7 @@ $(document).ready(function() {
 		return true;
 	});
 	
-	/* make the nav move as well */
+	// make the nav move as well
 	$(window).scroll(function() {
 		var scrollTop = $(window).scrollTop();
 		if(scrollTop<=scrollTopLimit) {
@@ -69,17 +61,18 @@ $(document).ready(function() {
 		}
 	});
 	
-	/* text replace for "Give and Take" to "Give + Take" */
+	// text replace for "Give and Take" to "Give + Take"
 	$('span.and').text('+');
+	$('.diagonal').css('lineHeight', '1px');
+	$('.diagonal').css('lineHeight', '0px'); // force reflow on IE7
 	
-	/* activate image carousel */
+	// activate image carousel
 	$('#slideshow').slideViewerPro({
 		galBorderWidth: 0,
 		typo: true,
 		thumbsActiveBorderColor: '#9cadc7',
-		buttonsTextColor: '#9cadc7',
+		buttonsTextColor: '#9cadc7'
 		// autoslide: true
 	});
-	
 });
 
