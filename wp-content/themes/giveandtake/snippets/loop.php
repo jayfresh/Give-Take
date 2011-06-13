@@ -29,13 +29,13 @@ if($i!=0) { ?>
 			<div id="tweetr">
 			<h3><a href="http://twitter.com/" target="_blank">On Twitter:</a></h3>
 				<?php 
-				/*tweet_blender_widget(array(
+				tweet_blender_widget(array(
 				    'unique_div_id' => 'tweets',
 				    'sources' => '@giveandtakeshop',
 				    'refresh_rate' => 60,
 				    'tweets_num' => 2,
 				    'view_more_url' => 'http://twitter.com/'
-				));*/
+				));
 				?>	
 			</div>
 				<?php } ?>
