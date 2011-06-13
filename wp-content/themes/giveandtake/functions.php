@@ -14,6 +14,9 @@ function add_stylesheets() { ?>
 	<link href='http://fonts.googleapis.com/css?family=Francois+One' rel='stylesheet' type='text/css'>
 	<link href='http://fonts.googleapis.com/css?family=PT+Sans:regular,bold' rel='stylesheet' type='text/css'>
 	<link href='<?php bloginfo( 'stylesheet_directory' ); ?>/css/svwp_style.css' rel='stylesheet' type='text/css'>
+	<!--[if IE 6]>
+	<link rel="stylesheet" type="text/css" href="<?php bloginfo( 'stylesheet_directory' ); ?>/css/ie6.css" />
+	<![endif]-->
 <?php }
 
 add_action('wp_head', 'add_stylesheets');

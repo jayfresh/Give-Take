@@ -407,7 +407,7 @@ img.map {
 
 /* ------------------------------- Terms pages */
 
-.single.terms.fullwidth {
+.terms {
 	background: url('images/bg-terms.jpg');
 	background-position: center top;
 	background-repeat: no-repeat;
@@ -415,27 +415,27 @@ img.map {
 	overflow: hidden;
 }
 
-.single.terms h2, .single.terms h1 {
+.terms h2, .terms h1 {
 	color: #868686;
 	font-size: 2.5em;
 }
 
-.single.terms h2 {
+.terms h2 {
 	font-size: 1.4em;
 }
 
-.single.terms .content {
+.terms .content {
 	width: 600px;
 	float: right;
 	background: white;
 	margin-bottom: 40px;
 }
 
-.single.terms .content p {
+.terms .content p {
 	padding-top: 0px;
 }
 
-.single.terms .content .tagline {
+.terms .content .tagline {
 	display: none;
 }
 
@@ -454,6 +454,7 @@ p {
 .tagline {
 	font-size: 1.1em;
 	padding: 10px 20px;
+	position: relative; /* to make sure overflow is visible in IE6; weirdly, overflow:visible doesn't work without it */
 }
 
 

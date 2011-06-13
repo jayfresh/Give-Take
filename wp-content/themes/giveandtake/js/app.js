@@ -11,7 +11,8 @@ $(document).ready(function() {
 		$anchors = $('a[name]'),
 		$lastAnchorContainer = $anchors.length ? $anchors.eq($anchors.length-1).closest('.fullwidth') : null,
 		scrollBottomLimit = $lastAnchorContainer ? $lastAnchorContainer.offset().top+diagOffset : scrollTopLimit,
-		navPosBottom = navFixedTop + scrollBottomLimit; // this is not used for pages where scrollBottomLimit = scollTopLimit
+		navPosBottom = navFixedTop + scrollBottomLimit, // this is not used for pages where scrollBottomLimit = scollTopLimit
+		isIE6 = $.browser.msie && parseInt($.browser.version,10) < 7;
 
 	$navLinks.click(function(e){
 		e.preventDefault();
@@ -35,28 +36,46 @@ $(document).ready(function() {
 	$(window).scroll(function() {
 		var scrollTop = $(window).scrollTop();
 		if(scrollTop<=scrollTopLimit) {
-			if($nav.css('position')==="fixed") {
+			if(isIE6) {
 				$nav.css({
-					position: 'absolute',
-					top: navPosTop,
-					left: navPosLeft
+					top: navPosTop
 				});
+			} else {
+				if($nav.css('position')==="fixed") {
+					$nav.css({
+						position: 'absolute',
+						top: navPosTop,
+						left: navPosLeft
+					});
+				}
 			}
 		} else if(scrollTop>scrollTopLimit && scrollTop<=scrollBottomLimit) {
-			if($nav.css('position')==="absolute") {
+			if(isIE6) {
 				$nav.css({
-					position: 'fixed',
-					top: navFixedTop,
-					left: navFixedLeft
+					top: scrollTop+'px'
 				});
+			} else {
+				if($nav.css('position')==="absolute") {
+					$nav.css({
+						position: 'fixed',
+						top: navFixedTop,
+						left: navFixedLeft
+					});
+				}
 			}
 		} else if(scrollTop>scrollBottomLimit) {
-			if($nav.css('position')==="fixed") {
+			if(isIE6) {
 				$nav.css({
-					position: 'absolute',
-					top: navPosBottom,
-					left: navPosLeft
+					top: scrollBottomLimit
 				});
+			} else {
+				if($nav.css('position')==="fixed") {
+					$nav.css({
+						position: 'absolute',
+						top: navPosBottom,
+						left: navPosLeft
+					});
+				}
 			}
 		}
 	});
