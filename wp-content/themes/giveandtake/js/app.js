@@ -25,7 +25,9 @@ $(document).ready(function() {
 			if($navLinks.index(this)!==$navLinks.length-1) {
 				goTo = $navMatch.closest('.fullwidth').offset().top+diagOffset;
 			}
-			$.scrollTo(goTo, 300);
+			$.scrollTo(goTo, 1000, {
+				easing: "swing"
+			});
 		} else { // we're probably on a content page - let's go back to the homepage
 			window.location = $navLinks.eq($navLinks.length-1).attr('href')+"#"+href;
 		}
