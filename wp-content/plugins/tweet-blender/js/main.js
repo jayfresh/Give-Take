@@ -896,7 +896,7 @@ function TB_enforceLimit(widgetId) {
 function TB_showLoader(widgetId) {
 	// if there are not tweets, show loading message
 	if(TB_config.widgets[widgetId].tweetsShown == 0) {
-		TB_showMessage(widgetId,'loading',TB_labels.loading_msg,true);
+		//TB_showMessage(widgetId,'loading',TB_labels.loading_msg,true);
 	}
 	// show animated icon
 	jQuery('#' + widgetId + '-mc > div.tb_header > div.tb_tools > a.tb_refreshlink > img').attr('src',TB_pluginPath + '/img/ajax-refresh.gif');
